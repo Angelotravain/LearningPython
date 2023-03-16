@@ -76,3 +76,13 @@ while True:
         # Opção inválida
         print("Opção inválida. Por favor, digite novamente.")
 
+#6)
+
+notas = []
+nota = float(input("Digite a nota do aluno (ou 120 para sair): "))
+while nota != 120:
+    notas.append(nota)
+    nota = float(input("Digite a nota do aluno (ou 120 para sair): "))
+
+media = sum(notas) / len(notas)
+print("A média das notas é:", media)
